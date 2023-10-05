@@ -43,7 +43,7 @@ int main(void)
 
     while (1)
     {
-        cin >> request;
+        cin.getline(request,sizeof(request));
 
         send(client_socket, request, strlen(request), 0);
     }
